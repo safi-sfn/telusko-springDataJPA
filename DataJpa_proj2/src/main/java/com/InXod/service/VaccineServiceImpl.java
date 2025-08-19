@@ -20,5 +20,11 @@ public class VaccineServiceImpl implements IVaccineService {
 		return "Vaccine Info is Stored with Id :"+vacc.getVaccineId();
 	}
 
+	@Override
+	public Iterable<Vaccine> registerMultipleVaccine(Iterable<Vaccine> vaccine) {
+		
+		return vaccRepo.saveAll(vaccine);
+	}
+
 	
 }
