@@ -10,10 +10,10 @@ import com.InXod.model.Vaccine;
 import com.InXod.service.VaccineServiceImpl;
 
 @SpringBootApplication
-public class DataJpaProj1Application {
+public class DataJpaProj2Application {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext container = SpringApplication.run(DataJpaProj1Application.class, args);
+		ConfigurableApplicationContext container = SpringApplication.run(DataJpaProj2Application.class, args);
 		
 		VaccineServiceImpl vaccService = container.getBean(VaccineServiceImpl.class);
 		
