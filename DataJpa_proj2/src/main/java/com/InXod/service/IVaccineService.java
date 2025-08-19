@@ -5,4 +5,6 @@ import com.InXod.model.Vaccine;
 public interface IVaccineService {
 	
 	public String registerVaccineDetails(Vaccine vaccine);
+	
+	Iterable<Vaccine> registerMultipleVaccine(Iterable<Vaccine> vaccine);
 }
