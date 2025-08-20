@@ -40,7 +40,7 @@ public class DataJpaProj2Application {
 */
 		
 		
-/*		
+		
 		// Register multiple vaccines in bulk
 
 		List<Vaccine> vaccine = new ArrayList<>();
@@ -53,7 +53,7 @@ public class DataJpaProj2Application {
 		for (Vaccine v : vac) {
 			System.out.println(v);
 		}
-*/
+
 		
 		
 /*		
