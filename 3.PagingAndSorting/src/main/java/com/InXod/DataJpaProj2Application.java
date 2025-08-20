@@ -16,7 +16,8 @@ public class DataJpaProj2Application {
 
 		VaccineServiceImpl vaccService = container.getBean(VaccineServiceImpl.class);
 
-
+		// Sort by price in ascending order
+		vaccService.fetchVaccineInfoBySorting(true, "vaccineCost").forEach(v->System.out.println(v));
 
 	}
 }
