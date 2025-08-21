@@ -45,9 +45,10 @@ public class DataJpaProj2Application {
 
 		List<Vaccine> vaccine = new ArrayList<>();
 
-		vaccine.add(new Vaccine("Moderna", "Moderna", 2500.0));
-		vaccine.add(new Vaccine("Rotavac", "Bharat Biotech", 2500.0));
-		vaccine.add(new Vaccine("Polio (IPV/OPV)", "Sanofi, SII", 2500.0));
+		vaccine.add(new Vaccine("Moderna", "Moderna", 2689.5));
+		vaccine.add(new Vaccine("Moderna", "Moderna", 2689.5));
+		vaccine.add(new Vaccine("Rotavac", "Bharat Biotech", 2360.5));
+		vaccine.add(new Vaccine("Polio (IPV/OPV)", "Sanofi, SII", 2580.5));
 
 		Iterable<Vaccine> vac = vaccService.registerMultipleVaccine(vaccine);
 		for (Vaccine v : vac) {
@@ -117,12 +118,12 @@ public class DataJpaProj2Application {
 		
 		
 		// Delete multiple vaccines by a list of IDs
-		List<Integer> ids = new ArrayList<>();
-		ids.add(2);
-		ids.add(52);
-		ids.add(54);
-		String status = vaccService.removeVaccineByIds(ids);
-		System.out.println(status);
+//		List<Integer> ids = new ArrayList<>();
+//		ids.add(2);
+//		ids.add(52);
+//		ids.add(54);
+//		String status = vaccService.removeVaccineByIds(ids);
+//		System.out.println(status);
 
 	}
 }
