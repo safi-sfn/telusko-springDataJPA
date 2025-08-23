@@ -15,6 +15,11 @@ public class DataJpaStaticProjection {
 		ConfigurableApplicationContext container = SpringApplication.run(DataJpaStaticProjection.class, args);
 
 		VaccineServiceImpl vaccService = container.getBean(VaccineServiceImpl.class);
+		
+//		vaccService.searchByVaccineCostLessThan(2600.0).forEach(v->System.out.println(v));
+		
+		
+		vaccService.searchFirst5ByVaccineCompanyOrderByVaccineNameAsc("Sanofi, SII").forEach(v->System.out.println(v));
 
 	}
 }
