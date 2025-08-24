@@ -32,5 +32,29 @@ public class VaccineServiceImpl implements IVaccineService {
 		return vaccRepo.searchByVaccineCompanies(comp1, comp2);
 	}
 
+	@Override
+	public List<String> fetchByVaccineCost(Double minCost, Double maxCost) {
+		
+		return vaccRepo.searchByVaccineCost(minCost, maxCost);
+	}
+
+	@Override
+	public int updateVaccineCostByVaccineName(Double newCost, String vaccineName) {
+		
+		return vaccRepo.updateCostByVaccineName(newCost, vaccineName);
+	}
+
+	@Override
+	public int deleteTheVaccineByVaccineName(String vaccName) {
+		
+		return vaccRepo.deleteVaccineByVaccineName(vaccName);
+	}
+
+	@Override
+	public int insertVaccineDetails(Integer Id, String vaccineName, String vaccineCompany, Double vaccineCost) {
+		
+		return vaccRepo.insertVaccineInfo(Id, vaccineName, vaccineCompany, vaccineCost);
+	}
+
 		
 }
