@@ -14,4 +14,12 @@ public interface IVaccineService {
 	
 	public List<Vaccine> fetchByVaccineCompanies(String comp1, String comp2);
 	
+	public List<String> fetchByVaccineCost(Double minCost, Double maxCost);
+	
+	public int updateVaccineCostByVaccineName(Double newCost, String vaccineName);
+	
+	public int deleteTheVaccineByVaccineName(String vaccName);
+	
+	public int insertVaccineDetails(Integer Id, String vaccineName, String vaccineCompany, Double vaccineCost);
+	
 }
