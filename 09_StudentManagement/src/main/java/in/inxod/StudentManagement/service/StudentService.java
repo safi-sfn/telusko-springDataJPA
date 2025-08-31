@@ -13,6 +13,8 @@ public interface StudentService {
 	
 	Optional<Students> findByStudentId(Integer id);
 	
+	Iterable<Students> findStudentByCourse(String course);
+	
 	String deleteStudentById(Integer id);
 	String deleteStudentWithMultipleIds(List<Integer> id);
 }
