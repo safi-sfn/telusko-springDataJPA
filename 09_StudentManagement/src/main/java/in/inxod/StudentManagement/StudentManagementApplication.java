@@ -97,7 +97,11 @@ public class StudentManagementApplication {
 		System.out.println(status);
 */		
 		
+		// Find All Students By Course
 		
+		String course = "Java";
+		service.findStudentByCourse(course);
+		System.out.println("All Students find with course : "+course);
 		
 	}
 
