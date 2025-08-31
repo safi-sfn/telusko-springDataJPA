@@ -81,6 +81,23 @@ public class StudentServiceImpl implements StudentService {
 			return "Students Deleted Successfully";
 		}
 		return "Deletion failure";
+		
+		
+	}
+
+	
+	
+	
+	
+	@Override
+	public Iterable<Students> findStudentByCourse(String course) {
+		Iterable<Students> student = repo.findAllByCourse(course);
+		for(Students st : student) {
+			System.out.println("Student ID   : "+st.getStudentId());
+			System.out.println("Student Name : "+st.getStudentName());
+			System.out.println("Student City : "+st.getStudentCity());
+		}
+		return student;
 	}
 
 }
