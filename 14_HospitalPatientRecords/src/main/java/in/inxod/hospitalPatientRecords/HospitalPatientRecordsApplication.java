@@ -32,7 +32,36 @@ public class HospitalPatientRecordsApplication {
 		service.addMultiplePatient(patients);
 */	
 	
-	
+		
+//		service.getPatientByDisease("Covid-19");
+		
+		
+/*		
+		int id = 12;
+	int rowCount = service.updateDoctorNameByPatientId("D.N Saah", id);
+	if(rowCount == 1) {
+		System.out.println("Doctor Name Updated ");
+	}else {
+		System.out.println("Doctor Not found with id : "+id);
+	}
+*/		
+		
+		// Delete Patient
+		
+//		service.deletePatientsById(25);
+		
+		//Patient by doctor name
+//		service.fetchPatientsByDoctor("Dr. Sinha");
+		
+		// Date After
+//		service.getByAdmittedDateAfter(LocalDate.of(2022,03, 17));
+//		System.out.println("======================================");
+		// Date Before
+//		service.getByAdmittedDateBefore(LocalDate.of(2021,03, 17));
+//		System.out.println("======================================");
+		// Date Between
+		service.getByAdmittedDateBetween(LocalDate.of(2018,1,1),LocalDate.of(2022,1,1));
+		
 	
 		
 		
