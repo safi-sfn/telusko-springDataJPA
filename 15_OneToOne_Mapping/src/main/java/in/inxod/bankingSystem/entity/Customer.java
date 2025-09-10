@@ -1,6 +1,7 @@
 package in.inxod.bankingSystem.entity;
 
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,8 +23,8 @@ public class Customer {
 	@Column(name="customer_name")
 	private String name;
 	
-	@OneToOne
-	@JoinColumn(name="account_datail_id")
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="account_datail_id", referencedColumnName = "id")
 	private AccountDetail accountDetail;
 
 	public Long getCustomerId() {
